@@ -36,8 +36,6 @@ Esta es mi página web e-commerce realizada en el marco del curso "Talento Tech 
 
 ## 🛠️ Herramientas
 
-<div align="center">
-
 <a href="https://fonts.google.com/">
   <img src="./src/assets/google-fonts.png" alt="google-fonts" /> 
 </a>
