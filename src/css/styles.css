@@ -39,6 +39,7 @@ a {
     "header"
     "home"
     "featuredblock"
+    "trendcat"
     "footer";
 }
 
@@ -66,7 +67,7 @@ header {
   margin-right: 10px; 
 }
 
-h3 {
+.header-banner h3 {
   line-height: 1;
   margin: 0;
   font-size: 18px;
@@ -309,4 +310,28 @@ footer {
   text-align: center;
   width: 100%;
   margin-bottom: 20px;
+}
+
+/* ESTILOS TREND  */
+
+.trend-categories {
+  grid-area: trendcat;
+}
+
+.trend-categories-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.trend-categories-container-box {
+  display: flex;
+  border: 1px solid #333333;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.trend-categories-item-image img {
+  border-radius: 20px;
+  width: 400px;
+  height: 400px;
 }
