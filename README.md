@@ -36,6 +36,8 @@ Esta es mi página web e-commerce realizada en el marco del curso "Talento Tech 
 
 ## 🛠️ Herramientas
 
+<div align="center">
+
 <a href="https://fonts.google.com/">
   <img src="./src/assets/google-fonts.png" alt="google-fonts" /> 
 </a>
@@ -49,7 +51,7 @@ Esta es mi página web e-commerce realizada en el marco del curso "Talento Tech 
 <a href="https://unsplash.com">
   <img src="./src/assets/unsplash.png" alt="unsplash" /> 
 </a>
-- Las mejores fotos de stock gratis, imágenes libres de regalías y vídeos compartidos por creadores.
+- La fuente de imágenes de internet. Con recursos de creadores de todo el mundo.
 
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
