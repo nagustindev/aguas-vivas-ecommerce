@@ -43,10 +43,14 @@ Esta es mi página web e-commerce realizada en el marco del curso "Talento Tech 
 </a>
 - Making the web more beautiful, fast, and open through great typography.
 
+<br>
+
 <a href="https://www.pexels.com">
   <img src="./src/assets/pexels.png" alt="pexels" /> 
 </a>
 - Las mejores fotos de stock gratis, imágenes libres de regalías y vídeos compartidos por creadores.
+
+<br>
 
 <a href="https://unsplash.com">
   <img src="./src/assets/unsplash.png" alt="unsplash" /> 
