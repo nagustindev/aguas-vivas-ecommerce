@@ -213,7 +213,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr; 
   align-items: start; /* Alinea los elementos en la parte superior */
-  border-top: 1px solid #333333;
+  border-top: 1px solid #333333
 }
 
 .featured-block-text {
@@ -243,7 +243,12 @@ header {
 }
 .featured-block-products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta automáticamente las columnas */
+  grid-template-columns: 1fr 1fr; /* Ajusta automáticamente las columnas */
+  grid-gap: 1px;
+}
+
+.featured-block-products-container {
+  outline: 1px solid #333333;
 }
 
 .featured-block-products-header-containner-inner {
@@ -255,11 +260,6 @@ header {
 
 .text-featured-block-products-header {
   font-family: "Archivo", Helvetica, Arial, sans-serif ; 
-}
-
-.featured-block-products-container {
-  border-left: 1px solid #333333;
-  border-right: 1px solid #333333;
 }
 
 .featured-block-products-item {
@@ -307,13 +307,14 @@ header {
 .trend-categories-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1px;
 }
 
 .trend-categories-container-box {
   display: flex;
-  border-right: 1px solid #333333;
   padding: 1rem;
   justify-content: center;
+  outline: 1px solid #333333;
 }
 
 .trend-categories-item-image img {
@@ -333,14 +334,19 @@ header {
 .contact-us-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  overflow: hidden;
+  grid-gap: 1px;
+  border-top: 1px solid #333333;
 }
 
 .contact-us-container-box {
+  position: relative;
   display: flex;
-  border: 1px solid #333333;
   padding: 1rem;
   justify-content: center;
+  outline: 1px solid #333333;
 }
+
 
 .contact-us-image img {
   border-radius: 20px;
@@ -350,7 +356,6 @@ header {
 
 .contact-us-form-box {
   padding: 1rem;
-  border: 1px solid #333333;
 }
 
 .contact-us-form-box h2 {
@@ -423,20 +428,21 @@ footer {
   margin: 0;
   padding: 2rem;
   display: block;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 .footer-menu {
   display: flex;
   flex-direction: column;
-  font-size: .85rem;
   justify-content: center;
   line-height: 1rem;
   text-align: center;
   margin-bottom: 20px;
+  
 }
 
 .footer-copy {
-  font-size: .85rem;
   line-height: 1rem;
   margin: 0 auto;
   text-align: center;
@@ -445,10 +451,25 @@ footer {
 }
 
 .footer-detail {
-  font-size: .85rem;
   line-height: 1rem;
   margin: 0 auto;
   text-align: center;
   width: 100%;
   margin-bottom: 20px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                MEDIA QUERIES                               */
+/* -------------------------------------------------------------------------- */
+
+@media (min-width: 1300px) {
+  .footer-menu {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1300px) {
+  .footer-menu>:not(:last-child) {
+    margin-right: 2rem;
+  }
 }
