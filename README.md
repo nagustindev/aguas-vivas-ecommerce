@@ -3,7 +3,7 @@
 <div align="center">
 
 <a href="https://github.com/nagustindev/aguas-vivas-ecommerce">
-  <img src="./src/assets/Isotipo.svg" alt="Logo" />
+  <img width="300px" src="./src/assets/Isotipo.svg" alt="Logo" width="800" />
 </a>
 
 ## Aguas Vivas E-Commerce
