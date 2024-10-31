@@ -8,7 +8,7 @@
 
 ## Aguas Vivas E-Commerce
 
-Esta es mi página web e-commerce realiza en el marco del curso "Talento Tech Front-End JS 2024".
+Esta es mi página web e-commerce realizada en el marco del curso "Talento Tech Front-End JS 2024".
 
 
 </div>
@@ -30,17 +30,15 @@ Esta es mi página web e-commerce realiza en el marco del curso "Talento Tech Fr
 
 ### Capturas de pantalla
 
-<img src="./src/assets/screen-para-readme.png" alt="Logo" />
+<img src="./src/assets/screen-para-readme.png" alt="screen-web" />
 
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
 ## 🛠️ Herramientas
 
-- [![Google Fonts][googlefonts-badge]][googlefonts-url] - Making the web more beautiful, fast, and open through great typography.
+<a href="https://fonts.google.com/">
+  <img src="./src/assets/google-fonts.png" alt="google-fonts" /> - Making the web more beautiful, fast, and open through great typography.
+</a> 
 
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
-
-[googlefonts-url]: https://fonts.google.com/
-[googlefonts-badge]: https://cdn.worldvectorlogo.com/logos/google-fonts-2021-2.svg
-
 
