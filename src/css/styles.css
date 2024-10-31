@@ -2,7 +2,10 @@
 /* <weight>: Use a value from 100 to 900 */
 
 
-/* ESTILOS UNIVERSALES */
+/* -------------------------------------------------------------------------- */
+/*                             ESTILOS UNIVERSALES                            */
+/* -------------------------------------------------------------------------- */
+
 html {
   font-family: "Archivo", Helvetica, Arial, sans-serif;
   font-optical-sizing: auto;
@@ -29,7 +32,10 @@ a {
   text-decoration: none;
 }
 
-/* GRID */
+/* -------------------------------------------------------------------------- */
+/*                                    GRID                                    */
+/* -------------------------------------------------------------------------- */
+
 .page-wrapper {
   display: grid;
   grid-template-columns: 1fr;
@@ -40,10 +46,13 @@ a {
     "home"
     "featuredblock"
     "trendcat"
+    "contact"
     "footer";
 }
 
-/* ESTILOS HEADER */
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
 
 header {
   grid-area: header;
@@ -102,7 +111,9 @@ header {
   padding: 0 20px; /* Espacio en los bordes */
 }
 
-/* ESTILOS NAV */
+/* -------------------------------------------------------------------------- */
+/*                                     NAV                                    */
+/* -------------------------------------------------------------------------- */
 
 .header-logo svg {
   transition: fill .1s;
@@ -153,7 +164,9 @@ header {
   color: #000000; /* Cambia el color del texto al pasar el cursor */
 }
 
-/* ESTILOS MAIN */
+/* -------------------------------------------------------------------------- */
+/*                                    MAIN                                    */
+/* -------------------------------------------------------------------------- */
 
 .home {
   grid-area: home;
@@ -175,9 +188,10 @@ header {
 
 .main-image img {
   width: 100%;
-  height: auto;
+  height: 70vh;
   object-fit: cover;
   display: flex;
+  border-radius: 25px;
 }
 
 .main-logo {
@@ -190,7 +204,9 @@ header {
   height: auto;
 }
 
-/* ESTILOS BLOCK */
+/* -------------------------------------------------------------------------- */
+/*                               FEATURED BLOCK                               */
+/* -------------------------------------------------------------------------- */
 
 .featured-block {
   grid-area: featuredblock;
@@ -202,11 +218,29 @@ header {
 
 .featured-block-text {
   padding: 1rem;
-  font-size: 70px; /* Tamaño de fuente grande */
-  line-height: 1.4; /* Espaciado entre líneas */
+  font-size: 60px; /* Tamaño de fuente grande */
+  line-height: .9; /* Espaciado entre líneas */
   color: #000000; /* Color del texto */
 }
 
+
+.featured-block-text p {
+  font-weight: 400;
+  line-height: .9; /* Espaciado entre líneas */
+  color: #000000; /* Color del texto */
+}
+
+.featured-block-text strong {
+  font-weight: 700;
+  line-height: .9; /* Espaciado entre líneas */
+  color: #000000; /* Color del texto */
+}
+
+.featured-block-text em {
+  font-weight: 200;
+  line-height: .9; /* Espaciado entre líneas */
+  color: #000000; /* Color del texto */
+}
 .featured-block-products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta automáticamente las columnas */
@@ -261,20 +295,127 @@ header {
   appearance: none;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                    TREND                                   */
+/* -------------------------------------------------------------------------- */
 
-/* ESTILOS CONTACTO */
-
-.contact-container {
+.trend-categories {
+  grid-area: trendcat;
   border-top: 1px solid #333333;
-  margin: 0;
 }
 
-.contact-image {
-  border-left: 1px solid #333333;
+.trend-categories-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.trend-categories-container-box {
+  display: flex;
+  border-right: 1px solid #333333;
+  padding: 1rem;
+  justify-content: center;
+}
 
-/* ESTILOS FOOTER */
+.trend-categories-item-image img {
+  border-radius: 20px;
+  width: 400px;
+  height: 400px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   CONTACT                                  */
+/* -------------------------------------------------------------------------- */
+
+.contact-us {
+  grid-area: contact;
+}
+
+.contact-us-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.contact-us-container-box {
+  display: flex;
+  border: 1px solid #333333;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.contact-us-image img {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.contact-us-form-box {
+  padding: 1rem;
+  border: 1px solid #333333;
+}
+
+.contact-us-form-box h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-us-form-box h3 {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.form-name {
+  border: 1px solid #333333;
+  border-radius: 1rem;
+  font-family: "Archivo", Helvetica, Arial, sans-serif;
+  font-size: .85rem;
+  padding: 0 1rem;
+  background: transparent;
+  width: 100%;
+  margin-bottom: .85rem;
+}
+
+.form-email {
+  border: 1px solid #333333;
+  border-radius: 1rem;
+  font-family: "Archivo", Helvetica, Arial, sans-serif;
+  font-size: .85rem;
+  padding: 0 1rem;
+  background: transparent;
+  width: 100%;
+  margin-bottom: .85rem;
+}
+
+.form-textarea {
+  border: 1px solid #333333;
+  border-radius: 1rem;
+  font-family: "Archivo", Helvetica, Arial, sans-serif;
+  font-size: .85rem;
+  padding: 0 1rem;
+  background: transparent;
+  width: 100%;
+  margin-bottom: .85rem;
+  resize: none;
+}
+
+.form-button {
+  width: 100%;
+  appearance: none;
+  background-color: #8ac5d3;
+  border: 1px solid #8ac5d3;
+  border-radius: 2rem;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Archivo", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
 
 footer {
   grid-area: footer;
@@ -310,28 +451,4 @@ footer {
   text-align: center;
   width: 100%;
   margin-bottom: 20px;
-}
-
-/* ESTILOS TREND  */
-
-.trend-categories {
-  grid-area: trendcat;
-}
-
-.trend-categories-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.trend-categories-container-box {
-  display: flex;
-  border: 1px solid #333333;
-  padding: 1rem;
-  justify-content: center;
-}
-
-.trend-categories-item-image img {
-  border-radius: 20px;
-  width: 400px;
-  height: 400px;
 }
