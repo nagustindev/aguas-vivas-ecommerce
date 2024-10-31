@@ -3,7 +3,7 @@
 <div align="center">
 
 <a href="https://github.com/nagustindev/aguas-vivas-ecommerce">
-  <img width="300px" src="./src/assets/Isotipo.svg" alt="Logo" width="800" />
+  <img width="300px" src="./src/assets/Isotipo.svg alt="Logo" width="800" />
 </a>
 
 ## Aguas Vivas E-Commerce
@@ -17,16 +17,16 @@ Esta es mi página web e-commerce realizada en el marco del curso "Talento Tech 
 <summary>Tabla de contenidos</summary>
 
 - [Características principales](#características-principales)
-  - [Capturas de pantalla de la web de La Velada IV](#capturas-de-pantalla)
-- [🛠️ Stack](#️-stack)
+  - [Capturas de pantalla](#capturas-de-pantalla)
+- [🛠️ Herramientas](#️-stack)
 
 </details>
 
 ## Características principales
 
-- **Detalles del evento**: Obtén información detallada sobre la fecha, hora, ubicación y artistas participantes.
-- **Compra de boletos**: Permite a los usuarios dirigirlos a la compra de boletos fácilmente.
-- **Redes sociales**: Conoce las redes oficiales donde podrás informarte sobre el evento.
+- **Home**: Landing page con navbar, productos, seccion de contacto y reseñas. 
+- **Navegación interna**: Navegacion por las distintas paginas de productos.
+- **Carrito de compra**: (Por desarrollar)
 
 ### Capturas de pantalla
 
@@ -37,8 +37,9 @@ Esta es mi página web e-commerce realizada en el marco del curso "Talento Tech 
 ## 🛠️ Herramientas
 
 <a href="https://fonts.google.com/">
-  <img src="./src/assets/google-fonts.png" alt="google-fonts" /> - Making the web more beautiful, fast, and open through great typography.
-</a> 
+  <img src="./src/assets/google-fonts.png" alt="google-fonts" /> 
+</a>
+- Making the web more beautiful, fast, and open through great typography.
 
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
