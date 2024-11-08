@@ -45,6 +45,10 @@ a {
     "featuredblock"
     "trendcat"
     "contact"
+    "dividersurfshowcase"
+    "surfshowcase"
+    "dividerreviews"
+    "dividerreviews"
     "reviews"
     "footer";
 }
@@ -99,7 +103,7 @@ header {
   overflow: hidden;
   background-color: #e9dbb9;
   display: flex;
-  align-items: center; /* Alinea verticalmente todos los elementos */
+  align-items: center; 
   justify-content: space-between;
   border-top: 1px solid #333333;
   border-bottom: 1px solid #333333;
@@ -107,7 +111,7 @@ header {
   border-bottom-left-radius: 32px;
   width: 100%;
   height: 7vh;
-  padding: 0 20px; /* Espacio en los bordes */
+  padding: 0 20px; 
 }
 
 .header-buttons {
@@ -149,9 +153,9 @@ header {
 
 .header-nav {
   display: flex;
-  justify-content: center; /* Centra los elementos horizontalmente */
-  align-items: center; /* Alinea verticalmente el contenido */
-  width: 100%; /* Asegúrate de que el ancho sea del 100% */
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; 
   flex-wrap: nowrap;
   overflow: auto;
   flex-grow: 1;
@@ -159,14 +163,14 @@ header {
 
 .menu {
   display: flex;
-  justify-content: center; /* Cambia esto para centrar los elementos del menú */
-  list-style: none; /* Elimina los puntos de la lista */
+  justify-content: center; 
+  list-style: none; 
   padding: 0;
   margin: 0;
 }
 
 .menu_item {
-  margin: 0 20px; /* Añade espacio entre los elementos del menú */
+  margin: 0 20px; 
   white-space: nowrap;
   width: 100%;
 }
@@ -175,12 +179,14 @@ header {
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
-  color: #333333; /* Ajusta el color del texto */
-  transition: color 0.3s ease;
+  color: #333333; 
+  transition: background-color 0.3s ease;
 }
 
 .menu_nav_item:hover {
-  color: #000000; /* Cambia el color del texto al pasar el cursor */
+  outline: 1px solid #000000;
+  outline-offset: 1em;
+  color: #89c3d2; 
 }
 /* -------------------------------------------------------------------------- */
 /*                                    MAIN                                    */
@@ -237,7 +243,7 @@ header {
   grid-area: featuredblock;
   display: grid;
   grid-template-columns: repeat(2,1fr); 
-  align-items: start; /* Alinea los elementos en la parte superior */
+  align-items: start; 
   border-top: 1px solid #333333;
 }
 
@@ -248,41 +254,41 @@ header {
   flex-wrap: nowrap;
   padding: 1rem;
   width: 100%;
-  max-height: 100%; /* Limita la altura para evitar desbordamiento */
+  max-height: 100%; 
   box-sizing: border-box;
 }
 
 .featured-block-text {
   display: flex;
-  flex-direction: column; /* Asegúrate de que el texto se apile verticalmente */
+  flex-direction: column; 
   font-size: 60px; 
   line-height: 0.9; 
   color: #000000;  
   white-space: normal;
-  overflow-wrap:break-word; /* Asegura que las palabras largas no se salgan */
+  overflow-wrap:break-word; 
 }
 
 .featured-block-text p {
   font-weight: 400;
-  line-height: .9; /* Espaciado entre líneas */
-  color: #000000; /* Color del texto */
+  line-height: .9; 
+  color: #000000; 
 }
 
 .featured-block-text strong {
   font-weight: 700;
-  line-height: .9; /* Espaciado entre líneas */
-  color: #000000; /* Color del texto */
+  line-height: .9; 
+  color: #000000; 
 }
 
 .featured-block-text em {
   font-weight: 200;
-  line-height: .9; /* Espaciado entre líneas */
-  color: #000000; /* Color del texto */
+  line-height: .9; 
+  color: #000000; 
 }
 
 .featured-block-products {
   display: grid;
-  grid-template-columns: repeat(2,1fr); /* Ajusta automáticamente las columnas */
+  grid-template-columns: repeat(2,1fr); 
   grid-gap: 1px;
   width: 100%;
   height: auto;
@@ -296,8 +302,8 @@ header {
 .featured-block-products-header-containner-inner {
   padding: 1rem;
   font-size: 25px;
-  background-color: #e9dbb9; /* Color de fondo para el encabezado */
-  border-bottom: 1px solid #333; /* Borde alrededor del encabezado */
+  background-color: #e9dbb9; 
+  border-bottom: 1px solid #333; 
 }
 
 .text-featured-block-products-header {
@@ -307,8 +313,13 @@ header {
 .featured-block-products-item {
   overflow: hidden;
   text-align: center;
-  margin: 0; /* Elimina márgenes adicionales */
-  padding: 0; /* Elimina padding si es necesario */
+  margin: 0; 
+  padding: 0; 
+  transition: background-color 0.3s ease;
+}
+
+.featured-block-products-item:hover {
+  background-color: #89c3d2;
 }
 
 .text-products-item {
@@ -331,7 +342,13 @@ header {
     padding: .30em;
     font-size: .8rem;
     font-weight: 500;
+    transition: background-color 0.3s ease;
   }
+}
+
+.featured-block-products-item:hover .badge {
+  background-color: #000000;
+  color: #e9dbb9;
 }
 
 .product-item-image {
@@ -344,23 +361,28 @@ header {
 
 .product-item-image img {
   width: 100%;
-  max-width: 432px; /* Tamaño máximo de la imagen en ancho */
+  max-width: 432px; 
   height: auto;
-  max-height: 603px; /* Tamaño máximo de la imagen en altura */
-}
-
-.product-item-purcharse {
-  padding: 10px;
+  max-height: 603px; 
 }
 
 .product-item-button {
-  all: unset;
+  background: none;
+  border: none;
+  padding: .30em;
+  cursor: pointer; 
   text-decoration: underline;
-  font-style: italic;
   font-size: 1.2rem;
   font-weight: 200;
+  border-radius: 25px;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
 }
 
+.featured-block-products-item:hover .product-item-button {
+  background-color: #295874;
+  color: #e9dbb9;
+}
 /* -------------------------------------------------------------------------- */
 /*                                    TREND                                   */
 /* -------------------------------------------------------------------------- */
@@ -381,15 +403,20 @@ header {
   justify-content: center;
   align-items: center;
   outline: 1px solid #333333;
+  transition: background-color 0.3s ease;
+}
+
+.trend-categories-container-box:hover{
+  background-color: #89c3d2;
 }
 
 .trend-categories-item-image img {
   border-radius: 20px;
-  width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
-  max-width: 432px; /* Tamaño máximo de la imagen en ancho */
-  height: auto; /* Mantiene la relación de aspecto */
-  max-height: 432px; /* Tamaño máximo de la imagen en altura */
-  object-fit: cover; /* Asegura que la imagen no se deforme */
+  width: 100%; 
+  max-width: 432px; 
+  height: auto; 
+  max-height: 432px; 
+  object-fit: cover; 
 }
 /* -------------------------------------------------------------------------- */
 /*                                   CONTACT                                  */
@@ -494,6 +521,126 @@ header {
   line-height: 2rem;
 }
 /* -------------------------------------------------------------------------- */
+/*                                  DIVISORES                                 */
+/* -------------------------------------------------------------------------- */
+.divider-contact {
+  grid-area: dividersurfshowcase;
+  display: grid;
+  border-top: 1px solid #333333;
+}
+
+.divider-contact h2 {
+  font-size: 48px;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.divider-reviews {
+  grid-area: dividerreviews;
+  display: grid;
+  border-top: 1px solid #333333;
+}
+
+.divider-reviews h2 {
+  font-size: 48px;
+  font-weight: 600;
+  padding: 1rem;
+}
+/* -------------------------------------------------------------------------- */
+/*                             SURFBOARD SHOWCASE                             */
+/* -------------------------------------------------------------------------- */
+.surfboard-showcase {
+  grid-area: surfshowcase;
+  display: grid;
+  grid-template-columns: repeat(4,1fr); 
+  align-items: start; 
+  grid-gap: 1px;
+}
+.surfboard-showcase-products {
+  display: grid;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+
+.surfboard-showcase-products-container {
+  outline: 1px solid #333333;
+}
+
+.surfboard-showcase-products-item {
+  overflow: hidden;
+  text-align: center;
+  margin: 0; 
+  padding: 0; 
+  transition: background-color 0.3s ease;
+}
+
+.surfboard-showcase-products-item:hover {
+  background-color: #89c3d2;
+}
+
+.surfboard-text-products-item {
+  text-align: left;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.surfboard-text-products-item p,
+.product-price {
+  margin: 0;
+}
+
+.surfboards-product-badges {
+  .surfboards-badge {
+    border: 1px solid #333333;
+    border-radius: 25px;
+    display: inline-block;
+    line-height: 1;
+    padding: .30em;
+    font-size: .8rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+}
+
+.surfboard-showcase-products-item:hover .surfboards-badge {
+  background-color: #000000;
+  color: #e9dbb9;
+}
+
+.surfboards-showcase-product-item-image {
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  position: relative;
+  object-fit: contain;
+}
+
+.surfboards-showcase-product-item-image img {
+  width: 100%;
+  max-width: 432px; 
+  height: auto;
+  max-height: 603px; 
+}
+
+.surfboard-product-item-button {
+  background: none;
+  border: none;
+  padding: .30em;
+  cursor: pointer; 
+  text-decoration: underline;
+  font-size: 1.2rem;
+  font-weight: 200;
+  border-radius: 25px;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.surfboard-showcase-products-item:hover .surfboard-product-item-button {
+  background-color: #295874;
+  color: #e9dbb9;
+}
+/* -------------------------------------------------------------------------- */
 /*                                   RESEÑAS                                  */
 /* -------------------------------------------------------------------------- */
 .reviews {
@@ -518,11 +665,11 @@ header {
 
 .reviews-item-image img {
   border-radius: 20px;
-  width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
-  max-width: 432px; /* Tamaño máximo de la imagen en ancho */
-  height: auto; /* Mantiene la relación de aspecto */
-  max-height: 432px; /* Tamaño máximo de la imagen en altura */
-  object-fit: cover; /* Asegura que la imagen no se deforme */
+  width: 100%; 
+  max-width: 432px; 
+  height: auto; 
+  max-height: 432px; 
+  object-fit: cover; 
 }
 
 .reviews-item-content {
@@ -611,6 +758,9 @@ footer {
       "featuredblock"
       "trendcat"
       "contact"
+      "dividersurfshowcase"
+      "surfshowcase"
+      "dividerreviews"
       "reviews"
       "footer";
   }
@@ -636,7 +786,7 @@ footer {
   }
 
   .footer-menu {
-    flex-direction: column; /* Apilar elementos en el footer */
+    flex-direction: column; 
   }
 
   .featured-block-text{
@@ -654,6 +804,9 @@ footer {
       "featuredblock"
       "trendcat"
       "contact"
+      "dividersurfshowcase"
+      "surfshowcase"
+      "dividerreviews"
       "reviews"
       "footer";
   }
@@ -672,6 +825,10 @@ footer {
 
   .trend-categories-container {
     grid-template-columns: repeat(2,1fr); 
+  }
+
+  .surfboard-showcase {
+    grid-template-columns: repeat(2,1fr);
   }
 
   .reviews-container {
@@ -712,6 +869,9 @@ footer {
       "featuredblock"
       "trendcat"
       "contact"
+      "dividersurfshowcase"
+      "surfshowcase"
+      "dividerreviews"
       "reviews"
       "footer";
   }
@@ -726,6 +886,10 @@ footer {
 
   .trend-categories-container {
     grid-template-columns: repeat(2,1fr); 
+  }
+
+  .surfboard-showcase {
+    grid-template-columns: 1fr;
   }
 
   .contact-us-container {
