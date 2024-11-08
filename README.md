@@ -8,7 +8,11 @@
 
 ## Aguas Vivas E-Commerce
 
-Esta es mi página web e-commerce realizada en el marco del curso "Talento Tech Front-End JS 2024".
+Aguas Vivas E-Commerce es un proyecto de tienda en línea desarrollado como parte del curso "Talento Tech Front-End JS 2024". Esta plataforma está orientada a la venta de productos para deportes acuáticos y busca ofrecer una experiencia de compra fluida y visualmente atractiva para los usuarios.
+
+En este proyecto se pone en práctica el uso de tecnologías y conceptos modernos en el desarrollo web, como JavaScript, HTML5, CSS3, y herramientas de diseño para crear una interfaz amigable, además de preparar la estructura para futuras integraciones de funciones avanzadas como el carrito de compra.
+
+El sitio tiene un enfoque en ofrecer una experiencia sencilla y eficiente para los usuarios que deseen adquirir artículos de calidad para deportes acuáticos.
 
 
 </div>
@@ -18,14 +22,14 @@ Esta es mi página web e-commerce realizada en el marco del curso "Talento Tech 
 
 - [Características principales](#características-principales)
   - [Capturas de pantalla](#capturas-de-pantalla)
-- [🛠️ Herramientas](#️-stack)
+- [🛠️ Herramientas](#️-herramientas)
 
 </details>
 
 ## Características principales
 
-- **Home**: Landing page con navbar, productos, seccion de contacto y reseñas. 
-- **Navegación interna**: Navegacion por las distintas paginas de productos.
+- **Home**: La landing page cuenta con un navbar intuitivo, una presentación de los productos destacados, una sección de contacto y testimonios de clientes satisfechos. Todo esto con un diseño atractivo y responsivo para adaptarse a diferentes dispositivos.
+- **Navegación interna**: Los usuarios pueden navegar entre las distintas páginas de productos, filtrando por categorías, precios y otros criterios relevantes para una búsqueda eficiente.
 - **Carrito de compra**: (Por desarrollar)
 
 ### Capturas de pantalla
