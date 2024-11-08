@@ -31,6 +31,8 @@ Esta es mi página web e-commerce realizada en el marco del curso "Talento Tech 
 ### Capturas de pantalla
 
 <img src="./src/assets/screen-para-readme.png" alt="screen-web" />
+<br>
+<img src="./src/assets/screen-para-readme-2.png" alt="screen-web-2" />
 
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
 
