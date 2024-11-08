@@ -1,11 +1,9 @@
 /* <uniquifier>: Use a unique and descriptive class name */
 /* <weight>: Use a value from 100 to 900 */
 
-
 /* -------------------------------------------------------------------------- */
 /*                             ESTILOS UNIVERSALES                            */
 /* -------------------------------------------------------------------------- */
-
 html {
   font-family: "Archivo", Helvetica, Arial, sans-serif;
   font-optical-sizing: auto;
@@ -31,11 +29,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
 /* -------------------------------------------------------------------------- */
 /*                                    GRID                                    */
 /* -------------------------------------------------------------------------- */
-
 .page-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
@@ -52,11 +48,9 @@ a {
     "reviews"
     "footer";
 }
-
 /* -------------------------------------------------------------------------- */
 /*                                   HEADER                                   */
 /* -------------------------------------------------------------------------- */
-
 header {
   grid-area: header;
   display: block;
@@ -132,11 +126,9 @@ header {
   height: 7vh;
   width: 5rem;
 }
-
 /* -------------------------------------------------------------------------- */
 /*                                     NAV                                    */
 /* -------------------------------------------------------------------------- */
-
 .header-logo svg {
   transition: fill .1s;
   width: 100%;
@@ -190,11 +182,9 @@ header {
 .menu_nav_item:hover {
   color: #000000; /* Cambia el color del texto al pasar el cursor */
 }
-
 /* -------------------------------------------------------------------------- */
 /*                                    MAIN                                    */
 /* -------------------------------------------------------------------------- */
-
 .home {
   grid-area: home;
   padding: 1rem; 
@@ -240,11 +230,9 @@ header {
   width: 30vw;
   height: auto;
 }
-
 /* -------------------------------------------------------------------------- */
 /*                               FEATURED BLOCK                               */
 /* -------------------------------------------------------------------------- */
-
 .featured-block {
   grid-area: featuredblock;
   display: grid;
@@ -291,6 +279,7 @@ header {
   line-height: .9; /* Espaciado entre líneas */
   color: #000000; /* Color del texto */
 }
+
 .featured-block-products {
   display: grid;
   grid-template-columns: repeat(2,1fr); /* Ajusta automáticamente las columnas */
@@ -322,9 +311,27 @@ header {
   padding: 0; /* Elimina padding si es necesario */
 }
 
+.text-products-item {
+  text-align: left;
+  padding: 10px;
+  font-weight: 700;
+}
+
 .text-products-item p,
 .product-price {
   margin: 0;
+}
+
+.product-badges {
+  .badge {
+    border: 1px solid #333333;
+    border-radius: 25px;
+    display: inline-block;
+    line-height: 1;
+    padding: .30em;
+    font-size: .8rem;
+    font-weight: 500;
+  }
 }
 
 .product-item-image {
@@ -347,13 +354,16 @@ header {
 }
 
 .product-item-button {
-  appearance: none;
+  all: unset;
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 200;
 }
 
 /* -------------------------------------------------------------------------- */
 /*                                    TREND                                   */
 /* -------------------------------------------------------------------------- */
-
 .trend-categories {
   grid-area: trendcat;
   border-top: 1px solid #333333;
@@ -381,20 +391,16 @@ header {
   max-height: 432px; /* Tamaño máximo de la imagen en altura */
   object-fit: cover; /* Asegura que la imagen no se deforme */
 }
-
-
-
 /* -------------------------------------------------------------------------- */
 /*                                   CONTACT                                  */
 /* -------------------------------------------------------------------------- */
-
 .contact-us {
   grid-area: contact;
 }
 
 .contact-us-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns:repeat(4,1fr);
   overflow: hidden;
   grid-gap: 1px;
   border-top: 1px solid #333333;
@@ -487,11 +493,9 @@ header {
   font-weight: 700;
   line-height: 2rem;
 }
-
 /* -------------------------------------------------------------------------- */
 /*                                   RESEÑAS                                  */
 /* -------------------------------------------------------------------------- */
-
 .reviews {
   grid-area: reviews;
   border-top: 1px solid #333333;
@@ -524,11 +528,9 @@ header {
 .reviews-item-content {
   font-size: 1rem;
 }
-
 /* -------------------------------------------------------------------------- */
 /*                                   FOOTER                                   */
 /* -------------------------------------------------------------------------- */
-
 footer {
   grid-area: footer;
   border-top: 1px solid #333333;
@@ -564,11 +566,9 @@ footer {
   width: 100%;
   margin-bottom: 20px;
 }
-
 /* -------------------------------------------------------------------------- */
 /*                                MEDIA QUERIES                               */
 /* -------------------------------------------------------------------------- */
-
 @media (min-width: 1299px) {
   .footer-menu {
     flex-direction: row;
@@ -600,11 +600,9 @@ footer {
     font-size: 2.5rem;
   } 
 }
-
 /* -------------------------------------------------------------------------- */
 /*                            DISPOSITIVOS MEDIANOS                           */
 /* -------------------------------------------------------------------------- */
-
 @media (max-width: 1299px) {
   .page-wrapper {
     grid-template-areas:
@@ -645,11 +643,9 @@ footer {
     font-size: 2rem;
   }
 }
-
 /* -------------------------------------------------------------------------- */
 /*                            DISPOSITIVOS PEQUEÑOS                           */
 /* -------------------------------------------------------------------------- */
-
 @media (max-width: 750px) {
   .page-wrapper {
     grid-template-areas:
@@ -671,11 +667,11 @@ footer {
   }
 
   .featured-block-products {
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: repeat(2,1fr); 
   }
 
   .trend-categories-container {
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: repeat(2,1fr); 
   }
 
   .reviews-container {
@@ -705,11 +701,9 @@ footer {
     width: 60vw;
   }
 }
-
 /* -------------------------------------------------------------------------- */
 /*                          DISPOSITIVOS MAS PEQUEÑOS                         */
 /* -------------------------------------------------------------------------- */
-
 @media (max-width: 500px) {
   .page-wrapper {
     grid-template-areas:
@@ -731,7 +725,7 @@ footer {
   }
 
   .trend-categories-container {
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: repeat(2,1fr); 
   }
 
   .contact-us-container {
