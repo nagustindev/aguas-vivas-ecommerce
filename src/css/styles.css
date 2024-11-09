@@ -45,8 +45,8 @@ a {
     "featuredblock"
     "trendcat"
     "contact"
-    "dividersurfshowcase"
-    "surfshowcase"
+    "dividerboardsshowcase"
+    "boardsshowcase"
     "dividerreviews"
     "dividerreviews"
     "reviews"
@@ -524,7 +524,7 @@ header {
 /*                                  DIVISORES                                 */
 /* -------------------------------------------------------------------------- */
 .divider-contact {
-  grid-area: dividersurfshowcase;
+  grid-area: dividerboardsshowcase;
   display: grid;
   border-top: 1px solid #333333;
 }
@@ -547,27 +547,28 @@ header {
   padding: 1rem;
 }
 /* -------------------------------------------------------------------------- */
-/*                             SURFBOARD SHOWCASE                             */
+/*                               BOARDS SHOWCASE                              */
 /* -------------------------------------------------------------------------- */
-.surfboard-showcase {
-  grid-area: surfshowcase;
+
+.boards-showcase {
+  grid-area: boardsshowcase;
   display: grid;
   grid-template-columns: repeat(4,1fr); 
   align-items: start; 
   grid-gap: 1px;
 }
-.surfboard-showcase-products {
+.boards-showcase-products {
   display: grid;
   width: 100%;
   height: auto;
   min-height: 100%;
 }
 
-.surfboard-showcase-products-container {
+.boards-showcase-products-container {
   outline: 1px solid #333333;
 }
 
-.surfboard-showcase-products-item {
+.boards-showcase-products-item {
   overflow: hidden;
   text-align: center;
   margin: 0; 
@@ -575,23 +576,23 @@ header {
   transition: background-color 0.3s ease;
 }
 
-.surfboard-showcase-products-item:hover {
+.boards-showcase-products-item:hover {
   background-color: #89c3d2;
 }
 
-.surfboard-text-products-item {
+.boards-text-products-item {
   text-align: left;
   padding: 10px;
   font-weight: 700;
 }
 
-.surfboard-text-products-item p,
+.boards-text-products-item p,
 .product-price {
   margin: 0;
 }
 
-.surfboards-product-badges {
-  .surfboards-badge {
+.boards-product-badges {
+  .boards-badge {
     border: 1px solid #333333;
     border-radius: 25px;
     display: inline-block;
@@ -603,12 +604,12 @@ header {
   }
 }
 
-.surfboard-showcase-products-item:hover .surfboards-badge {
+.boards-showcase-products-item:hover .boards-badge {
   background-color: #000000;
   color: #e9dbb9;
 }
 
-.surfboards-showcase-product-item-image {
+.boards-showcase-product-item-image {
   border-radius: 1rem;
   margin-bottom: 1rem;
   overflow: hidden;
@@ -616,14 +617,14 @@ header {
   object-fit: contain;
 }
 
-.surfboards-showcase-product-item-image img {
+.boards-showcase-product-item-image img {
   width: 100%;
   max-width: 432px; 
   height: auto;
   max-height: 603px; 
 }
 
-.surfboard-product-item-button {
+.boards-product-item-button {
   background: none;
   border: none;
   padding: .30em;
@@ -636,7 +637,7 @@ header {
   transition: background-color 0.3s ease;
 }
 
-.surfboard-showcase-products-item:hover .surfboard-product-item-button {
+.boards-showcase-products-item:hover .boards-product-item-button {
   background-color: #295874;
   color: #e9dbb9;
 }
@@ -758,8 +759,8 @@ footer {
       "featuredblock"
       "trendcat"
       "contact"
-      "dividersurfshowcase"
-      "surfshowcase"
+      "dividerboardsshowcase"
+      "boardsshowcase"
       "dividerreviews"
       "reviews"
       "footer";
@@ -804,8 +805,8 @@ footer {
       "featuredblock"
       "trendcat"
       "contact"
-      "dividersurfshowcase"
-      "surfshowcase"
+      "dividerboardsshowcase"
+      "boardsshowcase"
       "dividerreviews"
       "reviews"
       "footer";
@@ -827,7 +828,7 @@ footer {
     grid-template-columns: repeat(2,1fr); 
   }
 
-  .surfboard-showcase {
+  .boards-showcase {
     grid-template-columns: repeat(2,1fr);
   }
 
@@ -869,8 +870,8 @@ footer {
       "featuredblock"
       "trendcat"
       "contact"
-      "dividersurfshowcase"
-      "surfshowcase"
+      "dividerboardsshowcase"
+      "boardsshowcase"
       "dividerreviews"
       "reviews"
       "footer";
@@ -888,7 +889,7 @@ footer {
     grid-template-columns: repeat(2,1fr); 
   }
 
-  .surfboard-showcase {
+  .boards-showcase {
     grid-template-columns: 1fr;
   }
 
