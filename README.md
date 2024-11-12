@@ -29,8 +29,8 @@ La tipografía Archivo, utilizada en el sitio, es una sans-serif con un diseño 
 
 ## Características principales
 
-- **Home**: La landing page cuenta con un navbar intuitivo, una presentación de los productos destacados, una sección de contacto y testimonios de clientes satisfechos. Todo esto con un diseño atractivo y responsivo para adaptarse a diferentes dispositivos.
-- **Navegación interna**: Los usuarios pueden navegar entre las distintas páginas de productos, filtrando por categorías, precios y otros criterios relevantes para una búsqueda eficiente.
+- **Home**: La landing page cuenta con un navbar intuitivo fijado en la parte superior, una presentación con los productos destacados, una sección de contacto, mas productos, y testimonios de clientes satisfechos. Todo esto con un diseño atractivo y responsivo para adaptarse a diferentes dispositivos.
+- **Navegación interna**: Por el momento cuenta con una navegacion por el home.
 - **Carrito de compra**: (Por desarrollar)
 
 ### Capturas de pantalla
