@@ -262,7 +262,7 @@ header {
   line-height: 0.9; 
   color: #000000;  
   white-space: normal;
-  overflow-wrap:break-word; 
+  overflow-wrap: break-word;
 }
 
 .featured-block-text p {
@@ -775,6 +775,14 @@ footer {
     display: none;
   }
 
+  .featured-block {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-block-products {
+    grid-template-columns: repeat(2,1fr); 
+  }
+
   .contact-us-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -809,16 +817,10 @@ footer {
       "footer";
   }
 
-  .featured-block {
-    grid-template-columns: 1fr;
-  }
+ 
 
   .featured-block-text p {
     font-size: 24px;
-  }
-
-  .featured-block-products {
-    grid-template-columns: repeat(2,1fr); 
   }
 
   .trend-categories-container {
@@ -859,7 +861,7 @@ footer {
 /* -------------------------------------------------------------------------- */
 /*                          DISPOSITIVOS MAS PEQUEÑOS                         */
 /* -------------------------------------------------------------------------- */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .page-wrapper {
     grid-template-areas:
       "header"
