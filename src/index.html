@@ -226,13 +226,13 @@
                     <div class="contact-us-image-mobile">
                         <img src="./assets/img/free-photo-of-mar-vintage-mesa-costa.jpeg" alt="contact-phone">
                     </div>
-                    <form action="https://formspree.io/f/mnnqppkv" method="post">
+                    <form action="https://formspree.io/f/mnnqppkv" method="post" id="contactForm">
                         <div class="field">
-                            <input type="text" name="name" class="form-name" id="name" placeholder="Nombre" required>
+                            <input type="text" name="name" class="form-name" id="name" placeholder="Nombre">
                             <br>
-                            <input type="email" name="email" id="email" class="form-email" placeholder="Email" required>
+                            <input type="email" name="email" id="email" class="form-email" placeholder="Email">
                             <br>
-                            <textarea name="message" class="form-textarea" id="message" rows="10" placeholder="Mensaje" required></textarea>
+                            <textarea name="message" class="form-textarea" id="message" rows="10" placeholder="Mensaje"></textarea>
                             <br>
                         </div>
                         <button type="submit" class="form-button">Enviar</button>
@@ -399,5 +399,9 @@
             </div>
         </footer>
     </div>
+
+   <script src="/js/form.js"></script>
+   <script src="/js/validation.js"></script>
+   <script src="/js/products.js"></script>
 </body>
 </html>
