@@ -36,6 +36,6 @@ const productos = [
 
 // Generar dinámicamente la lista de productos y mostrarla en la consola
 console.log('Lista de productos:');
-productos.forEach((producto, index) => {
-    console.log(`${index + 1}. ${producto}`);
-});
+for (let i = 0; i < productos.length; i++) {
+    console.log(`${i + 1}. ${productos[i]}`);
+}
