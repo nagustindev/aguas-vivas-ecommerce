@@ -3909,8 +3909,8 @@ textarea.form-control-lg {
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
-  --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
-  --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+  --bs-navbar-color: #333333;;
+  --bs-navbar-hover-color: #89c3d2;
   --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
   --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
   --bs-navbar-brand-padding-y: 0.3125rem;
@@ -3920,19 +3920,53 @@ textarea.form-control-lg {
   --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
   --bs-navbar-nav-link-padding-x: 0.5rem;
   --bs-navbar-toggler-padding-y: 0.25rem;
-  --bs-navbar-toggler-padding-x: 0.75rem;
+  --bs-navbar-toggler-padding-x: 2rem;
   --bs-navbar-toggler-font-size: 1.25rem;
+  --bs-navbar-toggler-border-left-width: 1px; /* Nuevo borde izquierdo */
+  --bs-navbar-toggler-border-left-color: #333; /* Color del borde izquierdo */
+  --bs-navbar-toggler-border-left-style: solid; /* Estilo del borde */
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
-  --bs-navbar-toggler-border-radius: var(--bs-border-radius);
-  --bs-navbar-toggler-focus-width: 0.25rem;
-  --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+  /* --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15); */
+  /* --bs-navbar-toggler-border-radius: var(--bs-border-radius); */
+  /* --bs-navbar-toggler-focus-width: 0.25rem; */
+  --bs-navbar-toggler-transition: background-color 0.15s ease;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+}
+
+/* Ajustes del botón en particular */
+.navbar-toggler {
+  height: 7vh;
+  padding-left: 1rem; /* Espacio para el texto tras el borde */
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: var(--bs-navbar-color);
+  position: relative;
+}
+
+/* Estilo del borde izquierdo */
+.navbar-toggler::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: var(--bs-navbar-toggler-border-left-width);
+  background-color: var(--bs-navbar-toggler-border-left-color);
+}
+
+/* Hover del botón */
+.navbar-toggler:hover {
+  color: var(--bs-navbar-hover-color);
+}
+
+.navbar-toggler:hover::before {
+  background-color: var(--bs-navbar-hover-color);
 }
 .navbar > .container,
 .navbar > .container-fluid,

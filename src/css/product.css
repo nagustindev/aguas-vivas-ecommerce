@@ -32,7 +32,6 @@ html {
   .page-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    grid-template-rows: auto 1fr auto auto;
     width: 100%;
     overflow: hidden;
     min-height: 100vh;
@@ -87,96 +86,59 @@ html {
         transform: translateX(-100%);
     }
   }
-  
+  /* -------------------------------------------------------------------------- */
+  /*                                     NAV                                    */
+  /* -------------------------------------------------------------------------- */
   .header-wrap {
     flex-wrap: nowrap;
     overflow: hidden;
     background-color: #e9dbb9;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: space-between;
     border-top: 1px solid #333333;
     border-bottom: 1px solid #333333;
     border-bottom-right-radius: 32px;
     border-bottom-left-radius: 32px;
     width: 100%;
-    height: 7vh;
-    padding: 0 20px; 
+    height: 7vh; /* Aumenta la altura para dar más espacio */
+    padding: 0 20px;
   }
   
-  .header-buttons {
+  .header-logo {
+    height: 3rem;
+    max-width: 10rem;
     display: flex;
-  }
-  
-  .header-button-menu {
-    font-family: "Archivo", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    color: #333333;
     align-items: center;
-    border-left: 1px solid #333333;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    height: 7vh;
-    width: 5rem;
   }
-  /* -------------------------------------------------------------------------- */
-  /*                                     NAV                                    */
-  /* -------------------------------------------------------------------------- */
-  .header-logo svg {
-    transition: fill .1s;
+  
+  .header-logo img {
     width: 100%;
   }
   
-  .header_logo {
-    color: #333333;
-    height: 3rem;
-    justify-content: center;
-    max-width: 7rem;
-    padding: .4rem 1rem;
-  }
-  
-  .logo {
-    width: 150px;
-    height: auto;
-  }
-  
-  .header-nav {
+  .navbar-nav {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    width: 100%; 
-    flex-wrap: nowrap;
-    overflow: auto;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center;  /* Asegura que los elementos estén centrados verticalmente */
     flex-grow: 1;
   }
   
-  .menu {
-    display: flex;
-    justify-content: center; 
-    list-style: none; 
-    padding: 0;
-    margin: 0;
+  .navbar-nav .nav-item {
+    padding: 0 15px; /* Espaciado entre los elementos de la lista */
   }
   
-  .menu_item {
-    margin: 0 20px; 
-    white-space: nowrap;
-    width: 100%;
-  }
-  
-  .menu_nav_item {
+  .nav-link {
     text-decoration: none;
     font-size: 18px;
     font-weight: 700;
-    color: #333333; 
+    color: #333333;
     transition: background-color 0.3s ease;
   }
   
-  .menu_nav_item:hover {
-    outline: 1px solid #000000;
-    outline-offset: 1em;
-    color: #89c3d2; 
+  .nav-link:hover {
+    border: 1px solid #333333;
+    border-radius: 100px;
+    color: #89c3d2;
   }
   /* -------------------------------------------------------------------------- */
   /*                                  DIVISORES                                 */
@@ -337,10 +299,6 @@ html {
     .footer-menu>:not(:last-child) {
       margin-right: 2rem;
     }
-  
-    .header-button-menu {
-      display: none;
-    }
   }
   /* -------------------------------------------------------------------------- */
   /*                            DISPOSITIVOS MEDIANOS                           */
@@ -353,19 +311,6 @@ html {
         "boardsshowcase"
         "footer";
     }
-  
-    .header-wrap {
-      height: auto; 
-    }
-  
-    .header-banner h3 {
-      font-size: 16px; 
-    }
-  
-    .header-nav {
-      display: none;
-    }
-
     .footer-menu {
       flex-direction: column; 
     }
@@ -396,7 +341,6 @@ html {
         "boardsshowcase"
         "footer";
     }
-
     .boards-showcase {
       grid-template-columns: 1fr;
     }

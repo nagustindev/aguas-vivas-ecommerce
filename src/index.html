@@ -10,10 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="page-wrapper">
         <header>
             <div class="header-banner">
                 <h3>
@@ -37,64 +37,57 @@
             </div>
             
             <div class="header-wrap">
-                <a class="header-logo" href="./index.html">
-                    <img src="./assets/logo.svg" alt="Aguas Vivas Logo" class="logo">
-                </a>
-                
-                <nav class="header-nav">
-                    <ul class="menu"> 
-                        <li class="menu_item">
-                            <a class="menu_nav_item"  href="./pages/surf.html">
-                                <span class="mega_menu_item_title">Surf</span>
-                            </a>
-                        </li>
-                        <li class="menu_item">
-                            <a class="menu_nav_item"  href="./pages/sup.html">
-                                <span class="mega_menu_item_title">SUP</span>
-                            </a>
-                        </li>
-                        <li class="menu_item">
-                            <a class="menu_nav_item"  href="./pages/wind.html">
-                                <span class="mega_menu_item_title">Wind</span>
-                            </a>
-                        </li>
-                        <li class="menu_item">
-                            <a class="menu_nav_item"  href="./pages/kite.html">
-                                <span class="mega_menu_item_title">Kite</span>
-                            </a>
-                        </li>
-                        <li class="menu_item">
-                            <a class="menu_nav_item"  href="#">
-                                <span class="mega_menu_item_title">Accesorios</span>
-                            </a>
-                        </li>
-                        <li class="menu_item">
-                            <a class="menu_nav_item"  href="#reseñas">
-                                <span class="mega_menu_item_title">Reseñas</span>
-                            </a>
-                        </li>
-                        <li class="menu_item">
-                            <a class="menu_nav_item"  href="#contacto">
-                                <span class="mega_menu_item_title">Contacto</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                
-                <div class="header-buttons">
-                    <div class="header-button-menu">
-                        Menu
+                <nav class="navbar navbar-expand-lg navbar-ligh position-fixed w-100 container-fluid w-100">
+                    <div class="container-fluid">
+                        <a class="header-logo" href="./index.html">
+                            <img src="/assets/logo.svg" alt="Aguas Vivas Logo" class="logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <span>Menú</span>
+                        </button>
+                        <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Aguas Vivas</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./pages/surf.html">Surf</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./pages/sup.html">SUP</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./pages/wind.html">Wind</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./pages/kite.html">Kite</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Accesorios</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#reseñas">Reseñas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contacto">Contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </nav>
             </div>
+            
         </header>
             
         <section class="home">
                 <div class="main-image">
-                    <img src="./assets/img/hans-isaacson-iBJpl_5GgbE-unsplash.jpg" alt="Foto de la tienda" style="object-position: 50% 50%;">
+                    <img src="/assets/img/hans-isaacson-iBJpl_5GgbE-unsplash.jpg" alt="Foto de la tienda" style="object-position: 50% 50%;">
                 </div>
                 <div class="main-logo">
-                    <img src="./assets/Logo Claro.svg" alt="Aguas Vivas Logo" class="logo-claro">
+                    <img src="/assets/Logo Claro.svg" alt="Aguas Vivas Logo" class="logo-claro">
                 </div>
         </section>
     
@@ -130,7 +123,7 @@
                                     </div>
                                 </div>
                                 <div class="product-item-image">
-                                    <img src="./assets/img/naish-mad-dog-x32-main.png" alt="naish-mad-dog-x32-main" class="">
+                                    <img src="/assets/img/naish-mad-dog-x32-main.png" alt="naish-mad-dog-x32-main" class="">
                                 </div>
                             </a>
                             <button class="product-item-button">Añadir al carrito</button>
@@ -152,7 +145,7 @@
                                     </div>
                                 </div>
                                 <div class="product-item-image">
-                                    <img src="./assets/img/starboard-2024-genr.png" alt="starboard-2024-genr" class="">
+                                    <img src="/assets/img/starboard-2024-genr.png" alt="starboard-2024-genr" class="">
                                 </div>
                             </a>
                             <button class="product-item-button">Añadir al carrito</button>
@@ -168,7 +161,7 @@
                 <div class="trend-categories-container-box">
                     <a href="./pages/surf.html">
                         <div class="trend-categories-item-image">
-                            <img src="./assets/img/surfboards-cat.jpg" alt="surfboards">
+                            <img src="/assets/img/surfboards-cat.jpg" alt="surfboards">
                         </div>
                         <div class="trend-categories-item-content">
                             <h3>SURFBOARDS</h3>
@@ -179,7 +172,7 @@
                 <div class="trend-categories-container-box">
                     <a href="./pages/sup.html">
                         <div class="trend-categories-item-image">
-                            <img src="./assets/img/supboards-cat.jpg" alt="supboards">
+                            <img src="/assets/img/supboards-cat.jpg" alt="supboards">
                         </div>
                         <div class="trend-categories-item-content">
                             <h3>SUPBOARDS</h3>
@@ -190,7 +183,7 @@
                 <div class="trend-categories-container-box">
                     <a href="./pages/wind.html">
                         <div class="trend-categories-item-image">
-                            <img src="./assets/img/wind-cat.jpg" alt="wind">
+                            <img src="/assets/img/wind-cat.jpg" alt="wind">
                         </div>
                         <div class="trend-categories-item-content">
                             <h3>WIND</h3>
@@ -201,7 +194,7 @@
                 <div class="trend-categories-container-box">
                     <a href="./pages/kite.html">
                         <div class="trend-categories-item-image">
-                            <img src="./assets/img/kite-cat.jpg" alt="kite">
+                            <img src="/assets/img/kite-cat.jpg" alt="kite">
                         </div>
                         <div class="trend-categories-item-content">
                             <h3>KITE</h3>
@@ -217,7 +210,7 @@
                 <div class="contact-us-container-box"></div>
                 <div class="contact-us-container-box">
                     <div class="contact-us-image">
-                        <img src="./assets/img/free-photo-of-mar-vintage-mesa-costa.jpeg" alt="contact-phone">
+                        <img src="/assets/img/free-photo-of-mar-vintage-mesa-costa.jpeg" alt="contact-phone">
                     </div>
                 </div>
                 <div class="contact-us-form-box">
@@ -225,7 +218,7 @@
                     <br>
                     <h3>Contactanos para enterarte de toda la info más interesante sobre ofertas especiales, productos nuevos y todo el equipamiento acuático que necesites.</h3>
                     <div class="contact-us-image-mobile">
-                        <img src="./assets/img/free-photo-of-mar-vintage-mesa-costa.jpeg" alt="contact-phone">
+                        <img src="/assets/img/free-photo-of-mar-vintage-mesa-costa.jpeg" alt="contact-phone">
                     </div>
                     <form action="https://formspree.io/f/mnnqppkv" method="post" id="contactForm">
                         <div class="field">
@@ -334,7 +327,7 @@
             <div class="reviews-container">
                 <div class="reviews-container-box">
                         <div class="reviews-item-image">
-                            <img src="./assets/img/reseña-1.jpg" alt="surf-reseña">
+                            <img src="/assets/img/reseña-1.jpg" alt="surf-reseña">
                         </div>
                         <div class="reviews-item-content">
                             <p>&star;&star;&star;&star;&star;</p>
@@ -343,7 +336,7 @@
                 </div>
                 <div class="reviews-container-box">
                         <div class="reviews-item-image">
-                            <img src="./assets/img/reseña-2.jpg" alt="sup-reseña">
+                            <img src="/assets/img/reseña-2.jpg" alt="sup-reseña">
                         </div>
                         <div class="reviews-item-content">
                             <p>&star;&star;&star;&star;&star;</p>
@@ -352,7 +345,7 @@
                 </div>
                 <div class="reviews-container-box">
                         <div class="reviews-item-image">
-                            <img src="./assets/img/reseña-3.jpg" alt="kite-reseña">
+                            <img src="/assets/img/reseña-3.jpg" alt="kite-reseña">
                         </div>
                         <div class="reviews-item-content">
                             <p>&star;&star;&star;&star;&star;</p>
@@ -361,7 +354,7 @@
                 </div>
                 <div class="reviews-container-box">
                         <div class="reviews-item-image">
-                            <img src="./assets/img/reseña-4.jpg" alt="wind-reseña">
+                            <img src="/assets/img/reseña-4.jpg" alt="wind-reseña">
                         </div>
                         <div class="reviews-item-content">
                             <p>&star;&star;&star;&star;&star;</p>
@@ -401,8 +394,8 @@
         </footer>
     </div>
 
-   <script src="/js/form.js"></script>
-   <script src="/js/validation.js"></script>
-   <script src="/js/products.js"></script>
+   <script src="/src/js/form.js"></script>
+   <script src="/src/js/validation.js"></script>
+   <script src="/src/js/products.js"></script>
 </body>
 </html>
