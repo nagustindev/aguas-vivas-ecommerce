@@ -112,17 +112,6 @@ header {
   padding: 0 20px;
 }
 
-.header-logo {
-  height: 3rem;
-  max-width: 10rem;
-  display: flex;
-  align-items: center;
-}
-
-.header-logo img {
-  width: 100%;
-}
-
 .navbar-nav {
   display: flex;
   justify-content: center; /* Centra los elementos horizontalmente */
@@ -147,6 +136,49 @@ header {
   border-radius: 100px;
   color: #89c3d2;
 }
+
+.shopping-cart {
+  background: none;
+  border: none;
+  text-decoration: none;
+}
+
+.cart-offcanvas {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #f8f9fa;
+  transition: right 0.3s ease-in-out;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.offcanvas.open {
+  right: 0;
+}
+
+.cart-offcanvas-header, .cart-offcanvas-footer {
+  padding: 20px;
+  background-color: #343a40;
+  color: white;
+}
+
+.cart-offcanvas-body {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.cart-offcanvas-body ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-offcanvas-body li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                    MAIN                                    */
 /* -------------------------------------------------------------------------- */
@@ -325,7 +357,7 @@ header {
   max-height: 603px; 
 }
 
-.product-item-button {
+.boards-product-item-button {
   background: none;
   border: none;
   padding: .30em;
@@ -338,7 +370,7 @@ header {
   transition: background-color 0.3s ease;
 }
 
-.featured-block-products-item:hover .product-item-button {
+.featured-block-products-item:hover .boards-product-item-button {
   background-color: #295874;
   color: #e9dbb9;
 }

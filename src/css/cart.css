@@ -151,7 +151,7 @@ html {
   .boards-showcase {
     grid-area: boardsshowcase;
     display: grid;
-    grid-template-columns: repeat(4,1fr); 
+    grid-template-columns: 1fr; 
     align-items: start; 
     grid-gap: 1px;
   }
@@ -172,10 +172,6 @@ html {
     margin: 0; 
     padding: 0; 
     transition: background-color 0.3s ease;
-  }
-  
-  .boards-showcase-products-item:hover {
-    background-color: #89c3d2;
   }
   
   .boards-text-products-item {
@@ -202,11 +198,6 @@ html {
     }
   }
   
-  .boards-showcase-products-item:hover .boards-badge {
-    background-color: #000000;
-    color: #e9dbb9;
-  }
-  
   .boards-showcase-product-item-image {
     border-radius: 1rem;
     margin-bottom: 1rem;
@@ -217,9 +208,9 @@ html {
   
   .boards-showcase-product-item-image img {
     width: 100%;
-    max-width: 432px; 
+    max-width: 215px; 
     height: auto;
-    max-height: 603px; 
+    max-height: 301px; 
   }
   
   .boards-product-item-button {

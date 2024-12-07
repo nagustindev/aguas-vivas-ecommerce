@@ -1,3 +1,5 @@
+let productosJSON = [];
+
 const productos = [
     'aquamarina-coral',
     'aquamarina-vapor',
@@ -75,7 +77,7 @@ if (productos.length !== descripciones.length) {
     console.error('El número de productos y descripciones no coincide.');
 } else {
     // Generar los objetos JSON
-    const productosJSON = productos.map((producto, index) => {
+    productosJSON = productos.map((producto, index) => {
         const name = producto.replace(/-/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
         const description = descripciones[index];
         const amount = Math.floor(Math.random() * 100) + 1; // Cantidad aleatoria entre 1 y 100
@@ -100,13 +102,24 @@ function toggleDescripcion(index, event) {
     const descripcionDiv = document.getElementById('descripcion-producto-' + index);
     const button = event.target;
     
+    // Ajustar el índice para que coincida con el array (ID - 1)
+    const arrayIndex = index - 1;
+
+    // Validar que el índice está dentro del rango
+    if (arrayIndex < 0 || arrayIndex >= descripciones.length) {
+        console.error(`Índice fuera de rango: ${arrayIndex}`);
+        return;
+    }
+
     // Alternar la visibilidad de la descripción
     if (descripcionDiv.style.display === 'none' || descripcionDiv.style.display === '') {
         descripcionDiv.style.display = 'block';
-        descripcionDiv.innerHTML = `<p>${descripciones[index]}</p>`;
+        descripcionDiv.innerHTML = `<p>${descripciones[arrayIndex]}</p>`;
         button.textContent = 'Ocultar Descripción';
     } else {
         descripcionDiv.style.display = 'none';
         button.textContent = 'Mostrar Descripción';
     }
 }
+
+

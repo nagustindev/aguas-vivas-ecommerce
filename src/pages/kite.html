@@ -42,7 +42,7 @@
                 <nav class="navbar navbar-expand-lg navbar-ligh position-fixed w-100 container-fluid w-100">
                     <div class="container-fluid">
                         <a class="header-logo" href="/src/index.html">
-                            <img src="/assets/logo.svg" alt="Aguas Vivas Logo" class="logo">
+                            <img src="/assets/logo.svg" alt="Aguas Vivas Logo" class="logo" width="140" height="50">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                             <span>Menú</span>
@@ -69,6 +69,10 @@
                                 </ul>
                             </div>
                         </div>
+                        <div class="contador-carrito" id="contador-carrito">0</div>
+                        <a href="/src/pages/cart.html">
+                            <img src="/assets/MdiJellyfish.svg" alt="carrito" width="120" height="38">
+                        </a>
                     </div>
                 </nav>
             </div>
@@ -91,11 +95,11 @@
                             </div>
                         </div>
                         <div class="boards-showcase-product-item-image">
-                            <img src="/assets/img/duotone-wam-sls.png" alt="duotone-wam-sls" class="">
+                            <img src="/assets/img/7.png" alt="duotone-wam-sls" class="">
                         </div>
-                        <div id="descripcion-producto-6" class="descripcion-producto"></div>
-                        <button class="boards-product-item-button">Añadir al carrito</button>
-                        <button class="boards-product-item-button" onclick="toggleDescripcion(6, event)">Mostrar Descripción</button>
+                        <div id="descripcion-producto-7" class="descripcion-producto"></div>
+                        <button class="boards-product-item-button" onclick="agregarAlCarrito(7)">Añadir al carrito</button>
+                        <button class="boards-product-item-button" onclick="toggleDescripcion(7, event)">Mostrar Descripción</button>
                     </div>
                 </div>
             </div>
@@ -112,11 +116,11 @@
                             </div>
                         </div>
                         <div class="boards-showcase-product-item-image">
-                            <img src="/assets/img/eleveight-process-cv3.png" alt="north-charge-2022" class="">
+                            <img src="/assets/img/8.png" alt="eleveight-process-cv3" class="">
                         </div>
-                        <div id="descripcion-producto-7" class="descripcion-producto"></div>
-                        <button class="boards-product-item-button">Añadir al carrito</button>
-                        <button class="boards-product-item-button" onclick="toggleDescripcion(7, event)">Mostrar Descripción</button>
+                        <div id="descripcion-producto-8" class="descripcion-producto"></div>
+                        <button class="boards-product-item-button" onclick="agregarAlCarrito(8)">Añadir al carrito</button>
+                        <button class="boards-product-item-button" onclick="toggleDescripcion(8, event)">Mostrar Descripción</button>
                     </div>
                 </div>
             </div>
@@ -132,11 +136,11 @@
                             </div>
                         </div>
                         <div class="boards-showcase-product-item-image">
-                            <img src="/assets/img/cabrinha-phantom.png" alt="cabrinha-phantom" class="">
+                            <img src="/assets/img/4.png" alt="cabrinha-phantom" class="">
                         </div>
-                        <div id="descripcion-producto-3" class="descripcion-producto"></div>
-                        <button class="boards-product-item-button">Añadir al carrito</button>
-                        <button class="boards-product-item-button" onclick="toggleDescripcion(3, event)">Mostrar Descripción</button>
+                        <div id="descripcion-producto-4" class="descripcion-producto"></div>
+                        <button class="boards-product-item-button" onclick="agregarAlCarrito(4)">Añadir al carrito</button>
+                        <button class="boards-product-item-button" onclick="toggleDescripcion(4, event)">Mostrar Descripción</button>
                     </div>
                 </div>
             </div>
@@ -152,11 +156,11 @@
                             </div>
                         </div>
                         <div class="boards-showcase-product-item-image">
-                            <img src="/assets/img/cabrinha-ace-wood.png" alt="cabrinha-ace-wood" class="">
+                            <img src="/assets/img/3.png" alt="cabrinha-ace-wood" class="">
                         </div>
-                        <div id="descripcion-producto-2" class="descripcion-producto"></div>
-                        <button class="boards-product-item-button">Añadir al carrito</button>
-                        <button class="boards-product-item-button" onclick="toggleDescripcion(2, event)">Mostrar Descripción</button>
+                        <div id="descripcion-producto-3" class="descripcion-producto"></div>
+                        <button class="boards-product-item-button" onclick="agregarAlCarrito(3)">Añadir al carrito</button>
+                        <button class="boards-product-item-button" onclick="toggleDescripcion(3, event)">Mostrar Descripción</button>
                     </div>
                 </div>
             </div>
@@ -172,11 +176,11 @@
                             </div>
                         </div>
                         <div class="boards-showcase-product-item-image">
-                            <img src="/assets/img/north-atmos.png" alt="north-atmos" class="">
+                            <img src="/assets/img/19.png" alt="north-atmos" class="">
                         </div>
-                        <div id="descripcion-producto-18" class="descripcion-producto"></div>
-                        <button class="boards-product-item-button">Añadir al carrito</button>
-                        <button class="boards-product-item-button" onclick="toggleDescripcion(18, event)">Mostrar Descripción</button>
+                        <div id="descripcion-producto-19" class="descripcion-producto"></div>
+                        <button class="boards-product-item-button" onclick="agregarAlCarrito(19)">Añadir al carrito</button>
+                        <button class="boards-product-item-button" onclick="toggleDescripcion(19, event)">Mostrar Descripción</button>
                     </div>
                 </div>
             </div>
@@ -192,11 +196,11 @@
                             </div>
                         </div>
                         <div class="boards-showcase-product-item-image">
-                            <img src="/assets/img/north-charge-2022.png" alt="north-charge-2022" class="">
+                            <img src="/assets/img/20.png" alt="north-charge-2022" class="">
                         </div>
-                        <div id="descripcion-producto-19" class="descripcion-producto"></div>
-                        <button class="boards-product-item-button">Añadir al carrito</button>
-                        <button class="boards-product-item-button" onclick="toggleDescripcion(19, event)">Mostrar Descripción</button>
+                        <div id="descripcion-producto-20" class="descripcion-producto"></div>
+                        <button class="boards-product-item-button" onclick="agregarAlCarrito(20)">Añadir al carrito</button>
+                        <button class="boards-product-item-button" onclick="toggleDescripcion(20, event)">Mostrar Descripción</button>
                     </div>
                 </div>
             </div>
@@ -211,11 +215,11 @@
                             </div>
                         </div>
                         <div class="boards-showcase-product-item-image">
-                            <img src="/assets/img/duotone-jaime.png" alt="duotone-jaime" class="">
+                            <img src="/assets/img/6.png" alt="duotone-jaime" class="">
                         </div>
-                        <div id="descripcion-producto-5" class="descripcion-producto"></div>
-                        <button class="boards-product-item-button">Añadir al carrito</button>
-                        <button class="boards-product-item-button" onclick="toggleDescripcion(5, event)">Mostrar Descripción</button>
+                        <div id="descripcion-producto-6" class="descripcion-producto"></div>
+                        <button class="boards-product-item-button" onclick="agregarAlCarrito(6)">Añadir al carrito</button>
+                        <button class="boards-product-item-button" onclick="toggleDescripcion(6, event)">Mostrar Descripción</button>
                     </div>
                 </div>
             </div>
@@ -230,11 +234,11 @@
                             </div>
                         </div>
                         <div class="boards-showcase-product-item-image">
-                            <img src="/assets/img/eleveight-process-v8.png" alt="eleveight-process-v8" class="">
+                            <img src="/assets/img/9.png" alt="eleveight-process-v8" class="">
                         </div>
-                        <div id="descripcion-producto-8" class="descripcion-producto"></div>
-                        <button class="boards-product-item-button">Añadir al carrito</button>
-                        <button class="boards-product-item-button" onclick="toggleDescripcion(8, event)">Mostrar Descripción</button>
+                        <div id="descripcion-producto-9" class="descripcion-producto"></div>
+                        <button class="boards-product-item-button" onclick="agregarAlCarrito(9)">Añadir al carrito</button>
+                        <button class="boards-product-item-button" onclick="toggleDescripcion(9, event)">Mostrar Descripción</button>
                     </div>
                 </div>
             </div>
@@ -264,5 +268,6 @@
         </footer>
     </div>
     <script src="/src/js/products.js"></script>
+    <script src="/src/js/shoppingCart.js"></script>
 </body>
 </html>

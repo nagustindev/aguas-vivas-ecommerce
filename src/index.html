@@ -38,8 +38,8 @@
         <div class="header-wrap">
             <nav class="navbar navbar-expand-lg navbar-ligh position-fixed w-100 container-fluid w-100">
                 <div class="container-fluid">
-                    <a class="header-logo" href="./index.html">
-                        <img src="/assets/logo.svg" alt="Aguas Vivas Logo" class="logo">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="/assets/logo.svg" alt="Aguas Vivas Logo" class="logo" width="140" height="50">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                         <span>Menú</span>
@@ -72,10 +72,13 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="contador-carrito" id="contador-carrito">0</div>
+                    <a href="./pages/cart.html">
+                        <img src="/assets/MdiJellyfish.svg" alt="carrito" width="120" height="38">
+                    </a>
                 </div>
             </nav>
         </div>
-        
     </header>
             
     <section class="home">
@@ -118,11 +121,11 @@
                             </div>
                         </div>
                         <div class="product-item-image">
-                            <img src="/assets/img/naish-mad-dog-x32-main.png" alt="naish-mad-dog-x32-main" class="">
+                            <img src="/assets/img/18.png" alt="naish-mad-dog-x32-main" class="">
                         </div>
-                        <div id="descripcion-producto-17" class="descripcion-producto"></div>
-                        <button class="boards-product-item-button">Añadir al carrito</button>
-                        <button class="boards-product-item-button" onclick="toggleDescripcion(17, event)">Mostrar Descripción</button>
+                        <div id="descripcion-producto-18" class="descripcion-producto"></div>
+                        <button class="boards-product-item-button" onclick="agregarAlCarrito(18)">Añadir al carrito</button>
+                        <button class="boards-product-item-button" onclick="toggleDescripcion(18, event)">Mostrar Descripción</button>
                     </div>
                 </div>
             </div>
@@ -140,11 +143,11 @@
                             </div>
                         </div>
                         <div class="product-item-image">
-                            <img src="/assets/img/starboard-2024-genr.png" alt="starboard-2024-genr" class="">
+                            <img src="/assets/img/24.png" alt="starboard-2024-genr" class="">
                         </div>
-                        <div id="descripcion-producto-23" class="descripcion-producto"></div>
-                        <button class="boards-product-item-button">Añadir al carrito</button>
-                        <button class="boards-product-item-button" onclick="toggleDescripcion(23, event)">Mostrar Descripción</button>
+                        <div id="descripcion-producto-24" class="descripcion-producto"></div>
+                        <button class="boards-product-item-button" onclick="agregarAlCarrito(24)">Añadir al carrito</button>
+                        <button class="boards-product-item-button" onclick="toggleDescripcion(24, event)">Mostrar Descripción</button>
                     </div>
                     
                 </div>
@@ -248,11 +251,11 @@
                         </div>
                     </div>
                     <div class="boards-showcase-product-item-image">
-                        <img src="/assets/img/aquamarina-vapor.png" alt="aquamarina-vapor" class="">
+                        <img src="/assets/img/2.png" alt="aquamarina-vapor" class="">
                     </div>
-                    <div id="descripcion-producto-1" class="descripcion-producto"></div>
-                    <button class="boards-product-item-button">Añadir al carrito</button>
-                    <button class="boards-product-item-button" onclick="toggleDescripcion(1, event)">Mostrar Descripción</button>
+                    <div id="descripcion-producto-2" class="descripcion-producto"></div>
+                    <button class="boards-product-item-button" onclick="agregarAlCarrito(2)">Añadir al carrito</button>
+                    <button class="boards-product-item-button" onclick="toggleDescripcion(2, event)">Mostrar Descripción</button>
                 </div>
             </div>
         </div>
@@ -267,11 +270,11 @@
                         </div>
                     </div>
                     <div class="boards-showcase-product-item-image">
-                        <img src="/assets/img/duotone-jaime.png" alt="duotone-jaime" class="">
+                        <img src="/assets/img/6.png" alt="duotone-jaime" class="">
                     </div>
-                    <div id="descripcion-producto-5" class="descripcion-producto"></div>
-                    <button class="boards-product-item-button">Añadir al carrito</button>
-                    <button class="boards-product-item-button" onclick="toggleDescripcion(5, event)">Mostrar Descripción</button>
+                    <div id="descripcion-producto-6" class="descripcion-producto"></div>
+                    <button class="boards-product-item-button" onclick="agregarAlCarrito(6)">Añadir al carrito</button>
+                    <button class="boards-product-item-button" onclick="toggleDescripcion(6, event)">Mostrar Descripción</button>
                 </div>
             </div>
         </div>
@@ -286,11 +289,11 @@
                         </div>
                     </div>
                     <div class="boards-showcase-product-item-image">
-                        <img src="/assets/img/duotone-grip3-dlab.png" alt="duotone-grip3-dlab" class="">
+                        <img src="/assets/img/5.png" alt="duotone-grip3-dlab" class="">
                     </div>
-                    <div id="descripcion-producto-4" class="descripcion-producto"></div>
-                    <button class="boards-product-item-button">Añadir al carrito</button>
-                    <button class="boards-product-item-button" onclick="toggleDescripcion(4, event)">Mostrar Descripción</button>
+                    <div id="descripcion-producto-5" class="descripcion-producto"></div>
+                    <button class="boards-product-item-button" onclick="agregarAlCarrito(5)">Añadir al carrito</button>
+                    <button class="boards-product-item-button" onclick="toggleDescripcion(5, event)">Mostrar Descripción</button>
                 </div>
             </div>
         </div>
@@ -305,11 +308,11 @@
                         </div>
                     </div>
                     <div class="boards-showcase-product-item-image">
-                        <img src="/assets/img/uva-carrascox.png" alt="uva-carrascox" class="">
+                        <img src="/assets/img/32.png" alt="uva-carrascox" class="">
                     </div>
-                    <div id="descripcion-producto-31" class="descripcion-producto"></div>
-                    <button class="boards-product-item-button">Añadir al carrito</button>
-                    <button class="boards-product-item-button" onclick="toggleDescripcion(31, event)">Mostrar Descripción</button>
+                    <div id="descripcion-producto-32" class="descripcion-producto"></div>
+                    <button class="boards-product-item-button" onclick="agregarAlCarrito(32)">Añadir al carrito</button>
+                    <button class="boards-product-item-button" onclick="toggleDescripcion(32, event)">Mostrar Descripción</button>
                 </div>
             </div>
         </div>
@@ -392,5 +395,6 @@
    <script src="/src/js/form.js"></script>
    <script src="/src/js/validation.js"></script>
    <script src="/src/js/products.js"></script>
+   <script src="/src/js/shoppingCart.js"></script>
 </body>
 </html>
