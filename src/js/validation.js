@@ -4,7 +4,6 @@ form.addEventListener('submit', function (event) {
 
     let isValid = true;
 
-    // Limpiar mensajes de error previos
     document.querySelectorAll('.error').forEach(el => el.remove());
 
     // Validar nombre
@@ -17,7 +16,6 @@ form.addEventListener('submit', function (event) {
         isValid = false;
     }
 
-    // Validar email
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email.value.trim())) {
         const error = document.createElement('span');
@@ -28,7 +26,6 @@ form.addEventListener('submit', function (event) {
         isValid = false;
     }
 
-    // Detener envío si hay errores
     if (!isValid) {
         event.preventDefault();
     }

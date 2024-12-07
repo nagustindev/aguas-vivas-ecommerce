@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    actualizarContadorCarrito(); // Inicializa el contador al cargar la página
+    actualizarContadorCarrito(); 
 });
 
 function agregarAlCarrito(idProducto) {
@@ -28,7 +28,7 @@ function actualizarContadorCarrito() {
     if (contadorCarrito) {
         const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
         const totalProductos = carrito.reduce((acc, producto) => acc + producto.cantidad, 0);
-        contadorCarrito.textContent = totalProductos;  // Actualiza el contador en el navbar
+        contadorCarrito.textContent = totalProductos;  
     } else {
         console.error('Elemento contador-carrito no encontrado.');
     }
@@ -42,10 +42,10 @@ function eliminarProductoDelCarrito(idProducto) {
     localStorage.setItem('carrito', JSON.stringify(carritoActualizado));
 
     // Actualizar el contador del carrito
-    actualizarContadorCarrito();  // Se asegura de que el contador en el navbar se actualice
+    actualizarContadorCarrito();  
 
     // Llamar a la función para actualizar la vista del carrito (en la página del carrito)
-    mostrarCarrito();  // Asegúrate de que esta función esté implementada correctamente en el archivo correspondiente
+    mostrarCarrito();  
 }
 
 // Exponer las funciones

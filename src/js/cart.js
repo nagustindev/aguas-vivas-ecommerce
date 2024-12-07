@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     if (window.location.pathname.endsWith('cart.html')) {
-        mostrarCarrito();  // Se ejecuta al cargar la página
+        mostrarCarrito();  
     }
 });
 
@@ -13,10 +13,8 @@ function mostrarCarrito() {
         return;
     }
 
-    // Limpiar contenido actual
     carritoContainer.innerHTML = '';
 
-    // Mostrar mensaje si el carrito está vacío
     if (carrito.length === 0) {
         carritoContainer.innerHTML = '<p>Tu carrito está vacío.</p>';
         return;
@@ -45,7 +43,6 @@ function mostrarCarrito() {
         carritoContainer.innerHTML += productoHTML;
     });
 
-    // Mensaje si el carrito está vacío
     if (carrito.length === 0) {
         carritoContainer.innerHTML = '<p>Tu carrito está vacío.</p>';
     }

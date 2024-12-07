@@ -108,19 +108,19 @@ header {
   border-bottom-right-radius: 32px;
   border-bottom-left-radius: 32px;
   width: 100%;
-  height: 7vh; /* Aumenta la altura para dar más espacio */
+  height: 7vh; 
   padding: 0 20px;
 }
 
 .navbar-nav {
   display: flex;
-  justify-content: center; /* Centra los elementos horizontalmente */
-  align-items: center;  /* Asegura que los elementos estén centrados verticalmente */
+  justify-content: center; 
+  align-items: center; 
   flex-grow: 1;
 }
 
 .navbar-nav .nav-item {
-  padding: 0 15px; /* Espaciado entre los elementos de la lista */
+  padding: 0 15px; 
 }
 
 .nav-link {
@@ -179,6 +179,26 @@ header {
   border-bottom: 1px solid #ddd;
 }
 
+.cart-container {
+  position: relative; 
+  display: inline-block; 
+}
+
+.contador-carrito {
+  position: absolute;
+  top: -4px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  color: white; 
+  padding: 5px 10px;
+  font-weight: bold; 
+  font-size: 16px;
+}
+
+.carritoLogo {
+  width: 120px;
+  height: 38px; 
+}
 /* -------------------------------------------------------------------------- */
 /*                                    MAIN                                    */
 /* -------------------------------------------------------------------------- */
@@ -614,19 +634,6 @@ header {
   max-width: 432px; 
   height: auto;
   max-height: 603px; 
-}
-
-.boards-product-item-button {
-  background: none;
-  border: none;
-  padding: .30em;
-  cursor: pointer; 
-  text-decoration: underline;
-  font-size: 1.2rem;
-  font-weight: 200;
-  border-radius: 25px;
-  margin-bottom: 1rem;
-  transition: background-color 0.3s ease;
 }
 
 .boards-showcase-products-item:hover .boards-product-item-button {

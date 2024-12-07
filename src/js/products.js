@@ -72,7 +72,6 @@ const descripciones = [
     'Tabla larga de área en punta bajando a la cola, de buena curva para todo tipo de olas.',
 ];
 
-// Validar que los arrays tienen la misma longitud
 if (productos.length !== descripciones.length) {
     console.error('El número de productos y descripciones no coincide.');
 } else {
@@ -102,10 +101,9 @@ function toggleDescripcion(index, event) {
     const descripcionDiv = document.getElementById('descripcion-producto-' + index);
     const button = event.target;
     
-    // Ajustar el índice para que coincida con el array (ID - 1)
+    // Ajuste del indice para que coincida
     const arrayIndex = index - 1;
 
-    // Validar que el índice está dentro del rango
     if (arrayIndex < 0 || arrayIndex >= descripciones.length) {
         console.error(`Índice fuera de rango: ${arrayIndex}`);
         return;
