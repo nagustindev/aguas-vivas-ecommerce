@@ -73,19 +73,18 @@ const descripciones = [
 ];
 
 const precios = [
-    '740.000', '535.000', '1.394.145', '1.408.635', '3.200.000', '1.288.000', '1.950.000', '1.335.150', '1.190.000', '2.460.000', '1.581.290', '3.800.000', '2.200.000', '2.878.378', '605.000', '450.000','654.564', '1.800.000', '1.082.520', '1.779.840', '520.000', '1.578.921', '1.000.000', '2.900.000', '2.500.000', '3.100.000', '1.900.000', '2.200.000', '2.400.000', '826.800',
-    '823.670', '578.000', '1.000.000'
+    740000, 535000, 1394145, 1408635, 3200000, 1288000, 1950000, 1335150, 1190000, 2460000, 1581290, 3800000, 2200000, 2878378, 605000, 450000,654564, 1800000, 1082520, 1779840, 520000, 1578921, 1000000, 2900000, 2500000, 3100000, 1900000, 2200000, 2400000, 826800,
+    823670, 578000, 1000000
 ];
 
 if (productos.length !== descripciones.length || productos.length !== precios.length) {
     console.error('El número de productos, descripciones y precios no coincide.');
 } else {
-    // Generar los objetos JSON
     productosJSON = productos.map((producto, index) => {
         const name = producto.replace(/-/g, ' ').replace(/\b\w/g, char => char.toUpperCase());
         const description = descripciones[index];
         const price = precios[index]; 
-        const amount = Math.floor(Math.random() * 100) + 1; // Cantidad aleatoria entre 1 y 100
+        const amount = Math.floor(Math.random() * 100) + 1;
 
         return {
             id: index + 1,
@@ -96,7 +95,6 @@ if (productos.length !== descripciones.length || productos.length !== precios.le
         };
     });
 
-    // Mostrar los resultados
     console.log('Lista de productos en formato JSON:', productosJSON);
 
     productosJSON.forEach(producto => {
@@ -108,7 +106,6 @@ function toggleDescripcion(index, event) {
     const descripcionDiv = document.getElementById('descripcion-producto-' + index);
     const button = event.target;
     
-    // Ajuste del indice para que coincida
     const arrayIndex = index - 1;
 
     if (arrayIndex < 0 || arrayIndex >= descripciones.length) {
@@ -116,7 +113,6 @@ function toggleDescripcion(index, event) {
         return;
     }
 
-    // Alternar la visibilidad de la descripción
     if (descripcionDiv.style.display === 'none' || descripcionDiv.style.display === '') {
         descripcionDiv.style.display = 'block';
         descripcionDiv.innerHTML = `<p>${descripciones[arrayIndex]}</p>`;
