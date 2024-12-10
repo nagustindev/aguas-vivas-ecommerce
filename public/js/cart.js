@@ -77,10 +77,12 @@ function mostrarCarrito() {
 }
 
 function vaciarCarrito() {
-    localStorage.removeItem('carrito');
-    mostrarCarrito();
-    actualizarResumenCompra();
+    localStorage.removeItem('carrito');  
+    mostrarCarrito(); 
+    actualizarResumenCompra(); 
+    actualizarContadorCarrito(); 
 }
+
 
 function eliminarProductoDelCarrito(productId) {
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
