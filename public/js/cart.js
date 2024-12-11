@@ -20,8 +20,13 @@ function mostrarCarrito() {
 
     if (carrito.length === 0) {
         carritoVacio.innerHTML = '<p>Ups, parece que todavía no agregaste nada al carrito.</p>';
-        actualizarBotonComprar([]); 
+        carritoVacio.style.display = 'flex';
+        resumenContainer.style.display = 'none';
+        actualizarBotonComprar([]);
         return;
+    } else {
+        carritoVacio.style.display = 'none';
+        resumenContainer.style.display = 'block';
     }
 
     carrito.forEach(producto => {
@@ -79,17 +84,14 @@ function mostrarCarrito() {
 function vaciarCarrito() {
     localStorage.removeItem('carrito');  
     mostrarCarrito(); 
-    actualizarResumenCompra(); 
     actualizarContadorCarrito(); 
 }
-
 
 function eliminarProductoDelCarrito(productId) {
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     carrito = carrito.filter(producto => producto.id !== productId);  
     localStorage.setItem('carrito', JSON.stringify(carrito));  
     mostrarCarrito();
-    actualizarResumenCompra();
     actualizarBotonComprar(carrito);
 }
 
@@ -114,19 +116,8 @@ function actualizarCantidad(productId) {
         localStorage.setItem('carrito', JSON.stringify(carrito));
 
         mostrarCarrito();  
-        actualizarResumenCompra();  
     } else {
         console.error(`Producto con ID ${productId} no encontrado en el carrito.`);
-    }
-}
-
-function actualizarResumenCompra() {
-    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-    const totalCompra = carrito.reduce((total, producto) => total + (producto.price * producto.cantidad), 0);
-    
-    const totalCompraElement = document.getElementById('total-compra');
-    if (totalCompraElement) {
-        totalCompraElement.textContent = `$${totalCompra.toLocaleString()}`;
     }
 }
 
@@ -134,6 +125,14 @@ function actualizarBotonComprar(carrito) {
     const btnComprar = document.getElementById('btn-comprar');
     if (btnComprar) {
         btnComprar.disabled = carrito.length === 0;
+    }
+}
+
+function actualizarContadorCarrito() {
+    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    const contadorCarrito = document.getElementById('contador-carrito');
+    if (contadorCarrito) {
+        contadorCarrito.textContent = carrito.length;
     }
 }
 
